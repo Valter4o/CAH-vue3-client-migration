@@ -1,4 +1,5 @@
 import Vue from "vue";
+import vuetify from '../plugins/vuetify'
 import AuthApp from "./AuthApp.vue";
 import UnauthApp from "./UnauthApp.vue";
 import AuthRouter from "./router/AuthRouter";
@@ -10,6 +11,7 @@ const isAuth = false;
 const router = isAuth ? AuthRouter : UnauthRouter;
 
 new Vue({
+  vuetify,  
   router,
   store,
   render: (h) => {
