@@ -1,20 +1,15 @@
 <template>
-  <div class="header">
-    <h1>Unauth Header</h1>
-      <v-app>
-        <v-main>
-          <v-container>Hello world</v-container>
-        </v-main>
-      </v-app>
-  </div>
+    <div>
+        <h1>Unauth Header</h1>
+    </div>
 </template>
 
 <script>
-export default {};
+    export default {
+        
+    }
 </script>
 
 <style lang="scss" scoped>
-.header {
-  width: 126px;
-}
+
 </style>
