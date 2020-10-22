@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-number-animation": "^1.0.5",
     "vue-router": "^3.2.0",
     "vuetify": "^2.3.14",
     "vuex": "^3.4.0"
