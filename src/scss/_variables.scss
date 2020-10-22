@@ -1,7 +1,10 @@
 $border-radius-root: 7px;
 $font-size-root: 16px;
+$wrapper-width: 1280px;
 
-$color-primary: #66FCF1;
-$color-secondary: #C3073F;
+$color-primary: #C3073F;
+$color-primary-filter: invert(12%) sepia(76%) saturate(5781%) hue-rotate(334deg) brightness(82%) contrast(100%);
+$color-secondary: #66FCF1;
+$color-secondary-filter: invert(95%) sepia(64%) saturate(6760%) hue-rotate(149deg) brightness(101%) contrast(98%);
 $color-accent: black;
 $color-error: #c92634;
