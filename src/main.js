@@ -5,7 +5,9 @@ import AuthRouter from "./router/AuthRouter";
 import UnauthRouter from "./router/UnauthRouter";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
+import VueNumber from "vue-number-animation";
 
+Vue.use(VueNumber);
 Vue.config.productionTip = false;
 const isAuth = false;
 const router = isAuth ? AuthRouter : UnauthRouter;
