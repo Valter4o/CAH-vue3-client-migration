@@ -18,16 +18,18 @@ export default {
 
 <style lang="scss" scoped>
 .link-btn {
+  position: relative;
+  
+  margin: 1em;
+  padding: 0.6em 1.7em;
+  
   color: $color-secondary;
   background: none;
   border: 0;
-  box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
-  font-size: inherit;
+  font-size: 18px;
   font-weight: 700;
-  position: relative;
-  vertical-align: middle;
+  
+  box-sizing: border-box;
 
   &::before,
   &::after {

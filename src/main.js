@@ -6,9 +6,18 @@ import UnauthRouter from "./router/UnauthRouter";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
 import VueNumber from "vue-number-animation";
+import axios from "axios";
+import VueAxios from "vue-axios";
+
+const axiosConfig = axios.create({
+  baseURL: "http://localhost:6969",
+});
 
 Vue.use(VueNumber);
+Vue.use(VueAxios, axiosConfig);
+
 Vue.config.productionTip = false;
+
 const isAuth = false;
 const router = isAuth ? AuthRouter : UnauthRouter;
 

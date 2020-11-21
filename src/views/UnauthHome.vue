@@ -3,7 +3,7 @@
     <section id="intro" class="intro">
       <div class="wrapper">
         <figure class="intro__logo">
-          <img src="@/assets/images/playing-cards.svg" />
+          <img src="@/assets/images/logo.svg" />
         </figure>
         <h1 class="intro__title mb-3">Cards Against Humanity</h1>
         <p class="intro__animated-text">Dumb animated text</p>
@@ -134,6 +134,8 @@
 </template>
 
 <script>
+import { dispatch } from "vuex";
+
 export default {
   created() {
     window.addEventListener("scroll", this.onScroll);
@@ -149,6 +151,18 @@ export default {
       numberTo4: 504,
       offsetTop: 0,
       animationPlayed: false,
+      animatedText: [
+        "Because FUCK everything moral I guess",
+        "Warning: This game is not for people with no sense of humor",
+        "This is the game you are looking for *wave*",
+        "We play, because we don't care",
+        "Behold the game that has no moral and that is what makes her cool",
+        "Why are you reading this stupid animated text - GO PLAY THE GAME",
+        "If you see something buggy - it's a feature",
+        "Tip: Don't drink milk while playing this game",
+        "Seriously stop reading this animated text",
+        "You may still wonder why this game is cool ?",
+      ],
     };
   },
   watch: {
@@ -179,7 +193,6 @@ export default {
       }
     },
     playAnimation() {
-      console.log("start");
       this.$refs.counter1.play();
       this.$refs.counter2.play();
       this.$refs.counter3.play();
