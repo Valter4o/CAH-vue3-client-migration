@@ -3,7 +3,7 @@
     <div class="left-links">
       <BaseLink link="/solo" value="Solo" />
     </div>
-    <img class="nav__logo" src="@/assets/images/playing-cards.svg" v-on:click="redirectTo" />
+    <img class="nav__logo" src="@/assets/images/logo.svg" v-on:click="redirectTo" />
     <div class="right-links">
       <BaseLink link="/login" value="Login" />
       <BaseLink link="/register" value="Register" />
